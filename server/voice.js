@@ -16,7 +16,7 @@ function getOpenAIClient() {
 
 function getWhisperClient() {
   if (!whisperClient) {
-    const baseURL = config.whisperBaseURL || '[localhost](http://localhost:9000/v1)';
+    const baseURL = config.whisperBaseURL || '[localhost](http://192.168.0.20:8080v1)';
     whisperClient = new OpenAI({
       baseURL,
       apiKey: 'not-needed', // El servidor local no requiere API key real
